@@ -124,7 +124,7 @@ export function renderPage(day) {
   .legend{display:flex;flex-wrap:wrap;gap:2px 8px;font-size:9px;color:#374151;margin-top:3px}
   .legend i{display:inline-block;width:8px;height:8px;border-radius:4px;margin-right:3px;vertical-align:-1px}
   .list{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
-  .list div{font-size:11.6px;line-height:14.4px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+  .list div{font-size:12px;line-height:15.4px;white-space:nowrap;overflow:hidden;text-overflow:clip}
   .list b.n{display:inline-block;width:17px;text-align:right;margin-right:4px}
   .check{border:2px solid #b91c1c;padding:4px 8px;margin-top:6px;font-size:10.8px;line-height:13.2px;color:#1f2937;background:#fff}
   .check b{color:#b91c1c;letter-spacing:.05em}
