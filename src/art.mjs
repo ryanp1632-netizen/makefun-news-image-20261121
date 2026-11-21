@@ -59,6 +59,7 @@ const FLAGS = {
     <circle cx="22" cy="6" r="2.5" fill="#fcd116"/>${star(7, 13, 1.3, '#fff')}${star(4.5, 16, 1, '#fff')}${star(9.5, 16.5, 1, '#fff')}`,
   PH: `<rect width="30" height="10" fill="#0038a8"/><rect y="10" width="30" height="10" fill="#ce1126"/>
     <path d="M0,0L17,10L0,20Z" fill="#fff"/><circle cx="5.5" cy="10" r="2.2" fill="#fcd116"/>`,
+  FI: `<rect width="30" height="20" fill="#fff"/><path d="M11,0V20M0,10H30" stroke="#002f6c" stroke-width="5"/>`,
   DK: `<rect width="30" height="20" fill="#c8102e"/><path d="M11,0V20M0,10H30" stroke="#fff" stroke-width="3.6"/>`,
   TR: `<rect width="30" height="20" fill="#e30a17"/><circle cx="11.5" cy="10" r="5" fill="#fff"/>
     <circle cx="12.8" cy="10" r="4" fill="#e30a17"/>${star(18, 10, 2.4, '#fff')}`,
