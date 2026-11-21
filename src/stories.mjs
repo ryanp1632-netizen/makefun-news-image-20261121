@@ -84,26 +84,16 @@ export const day = {
       sum: 'Son cites near-total intestinal blockage.', src: 'DW, UPI',
     },
     {
-      place: "Cox's Bazar", region: 'Asia', cat: 'life', at: [92.0, 21.4], flags: ['BD', 'MM'], sym: 'scales', bg: '#ede9fe',
-      caption: 'ROHINGYA CAMPS · AFTER ICJ',
-      head: "Rohingya welcome genocide ruling but 'want to go home'",
-      sum: 'Refugees react to the UN court verdict.', src: 'AP',
-    },
-    {
       place: 'Gaza', region: 'Middle East', cat: 'war', at: [34.4, 31.5], flags: ['PS'], sym: 'rain', bg: '#e5e7eb',
       caption: 'GAZA · WINTER',
       head: 'Israeli strikes kill six, Gaza civil defence says',
       sum: 'Displaced families brace for winter.', src: 'AFP, Guardian',
     },
-    {
-      place: 'Pyongyang', region: 'Asia', cat: 'politics', at: [125.8, 39.0], flags: ['KP'], sym: 'factory', bg: '#e0f2fe',
-      caption: 'PYONGYANG · STATE MEDIA',
-      head: 'Kim tours school supply works after Trump snub',
-      sum: 'No Trump meeting on his Asia trip.', src: 'KCNA, Reuters',
-    },
   ],
 
   briefs: [
+    { place: "Cox's Bazar", region: 'Asia', cat: 'life', at: [92.0, 21.4], text: 'Rohingya hail ICJ ruling, want to go home', src: 'AP' },
+    { place: 'Pyongyang', region: 'Asia', cat: 'politics', at: [125.8, 39.0], text: 'Kim tours school works after Trump snub', src: 'KCNA' },
     { place: 'Kyiv', region: 'Europe', cat: 'war', at: [30.5, 50.4], text: "Zelensky calls Putin a 'killer'", src: 'CNN' },
     { place: 'Kyiv', region: 'Europe', cat: 'war', at: [30.5, 50.4], text: "Crimea bridge 'will not stay': Zelensky", src: 'KI' },
     { place: 'Warsaw', region: 'Europe', cat: 'war', at: [21.0, 52.2], text: "Rutte: missiles a 'grave violation'", src: 'Guardian' },

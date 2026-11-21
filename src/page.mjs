@@ -68,10 +68,10 @@ function leadCard(s) {
 
 function smallCard(s) {
   const c = CATS[s.cat];
-  const flags = (s.flags || []).map((f, i) => flag(f, 6 + i * 36, 4, 32)).join('');
+  const flags = (s.flags || []).map((f, i) => flag(f, 7 + i * 46, 6, 40)).join('');
   return `<article class="card">
     <div class="banner" style="background:${s.bg || '#e5edf5'}">
-      <svg width="186" height="50" viewBox="0 0 186 50">${flags}${symbol(s.sym, 130, 0, 38)}</svg>
+      <svg width="100%" height="62" viewBox="0 0 236 62" preserveAspectRatio="xMinYMid meet">${flags}${symbol(s.sym, 176, 1, 48)}</svg>
       <div class="cap">${esc(s.caption)}</div></div>
     <div class="kick small"><span class="num" style="background:${c.color}">${s.n}</span><span style="color:${c.color}">${esc(s.place)}</span></div>
     <h3>${esc(s.head)}</h3>
@@ -112,19 +112,19 @@ export function renderPage(day) {
   .lead p{font-size:12.2px;line-height:14.4px;margin-top:3px;color:#1f2937}
   .src{color:#6b7280}
   .rule{border-top:3px solid #111827;margin-top:7px}
-  .cards{display:grid;grid-template-columns:repeat(5,1fr);gap:6px 10px;margin-top:6px}
-  .banner{position:relative;height:50px;overflow:hidden;border:1px solid #cbd5e1}
-  .cap{position:absolute;left:0;right:0;bottom:0;background:#111827;color:#fff;font-size:10px;font-weight:700;padding:2px 5px;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
+  .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:7px 14px;margin-top:6px}
+  .banner{position:relative;height:62px;overflow:hidden;border:1px solid #cbd5e1}
+  .cap{position:absolute;left:0;right:0;bottom:0;background:#111827;color:#fff;font-size:11px;font-weight:700;padding:2px 5px;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
   .kick.small{margin-top:4px;font-size:9.5px}
-  .card h3{font-family:Georgia,serif;font-size:15px;line-height:16.6px;margin-top:2px}
-  .card p{font-size:11px;line-height:13px;margin-top:2px;color:#1f2937}
+  .card h3{font-family:Georgia,serif;font-size:18px;line-height:19.5px;margin-top:2px}
+  .card p{font-size:12px;line-height:14px;margin-top:2px;color:#1f2937}
   .bottom{display:grid;grid-template-columns:318px 1fr;gap:14px;margin-top:6px}
   .bottom h4{font-size:11px;font-weight:700;letter-spacing:.06em;color:#111827;margin-bottom:3px}
   .pinnum{font-size:8.5px;font-weight:700;fill:#fff;font-family:Arial}
   .legend{display:flex;flex-wrap:wrap;gap:2px 8px;font-size:9px;color:#374151;margin-top:3px}
   .legend i{display:inline-block;width:8px;height:8px;border-radius:4px;margin-right:3px;vertical-align:-1px}
   .list{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
-  .list div{font-size:10.8px;line-height:13.6px;white-space:nowrap;overflow:hidden;text-overflow:clip}
+  .list div{font-size:11.6px;line-height:14.4px;white-space:nowrap;overflow:hidden;text-overflow:clip}
   .list b.n{display:inline-block;width:17px;text-align:right;margin-right:4px}
   .check{border:2px solid #b91c1c;padding:4px 8px;margin-top:6px;font-size:10.8px;line-height:13.2px;color:#1f2937;background:#fff}
   .check b{color:#b91c1c;letter-spacing:.05em}

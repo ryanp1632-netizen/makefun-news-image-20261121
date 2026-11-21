@@ -23,7 +23,7 @@ for(const el of document.querySelectorAll('h1,h2,h3,p,.list div,.cap,.fig span,.
   if(el.scrollWidth>el.clientWidth+1||el.scrollHeight>el.clientHeight+1)bad.push((el.className||el.tagName)+': '+el.textContent.slice(0,50));}
 const last=document.querySelector('.foot').getBoundingClientRect().bottom;if(last>1022)bad.push('page runs to '+Math.round(last)+'px');
 for(const h of document.querySelectorAll('.lead h2,.card h3')){const lines=Math.round(h.getBoundingClientRect().height/parseFloat(getComputedStyle(h).lineHeight));
-  if(lines>(h.tagName==='H2'?2:3))bad.push('headline runs to '+lines+' lines: '+h.textContent.slice(0,40));}
+  if(lines>2)bad.push('headline runs to '+lines+' lines: '+h.textContent.slice(0,40));}
 for(const p of document.querySelectorAll('.lead p,.card p')){const box=p.closest('article').getBoundingClientRect();
   if(p.getBoundingClientRect().bottom>box.bottom+1)bad.push('summary leaves its card: '+p.textContent.slice(0,40));}
 const leads=[...document.querySelectorAll('.lead')].map(a=>a.getBoundingClientRect().bottom);
